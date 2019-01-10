@@ -1,7 +1,7 @@
 <?php
 $nameErr = $surnameErr = $ageErr = false;
 
-if (!isset($_POST['name']) ) {
+if (!isset($_POST['name']) || !isset($_POST['surname']) || !isset($_POST['birthday'])) {
     header('Location: index.html'); 
 }
 
